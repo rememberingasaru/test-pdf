@@ -1,11 +1,24 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>GitHub Pages Working</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flipbook</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/page-flip/dist/js/page-flip.browser.js"></script>
 </head>
 <body>
-  <h1>GitHub Pages is live ✅</h1>
-  <p>If you can see this, Pages is working.</p>
+  <div class="wrap">
+    <div id="book"></div>
+
+    <div class="controls">
+      <button id="prev">◀</button>
+      <span id="pageInfo"></span>
+      <button id="next">▶</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
